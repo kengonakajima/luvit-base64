@@ -15,7 +15,7 @@ programtest: $(OUT)
 	$(LUVIT) test.lua 
 
 install_luvit :
-	cd /tmp; rm -rf luvit; git clone https://github.com/luvit/luvit.git; cd luvit; make;make install
+	cd /tmp; rm -rf luvit; git clone https://github.com/luvit/luvit.git; cd luvit; make; sudo make install
 
 clean:
 	rm -rf *.luvit *.dSYM
