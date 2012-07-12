@@ -1,14 +1,23 @@
 LUVIT = luvit
 CFLAGS   := $(shell $(LUVIT) --cflags | sed s/-Werror//)
 LIBFLAGS  := $(shell $(LUVIT) --libs )
+OUT = base64.luvit
 
-all: base64.luvit
+all: $(OUT)
 
-base64.luvit: base64.c
+$(OUT): base64.c
 	gcc $(LIBFLAGS) -g $(CFLAGS) -I. -o $@ $^
 
-test:
+test: travis_test
+
+
+travis_test: install_luvit programtest
+
+programtest: $(OUT)
 	$(LUVIT) test.lua 
+
+install_luvit :
+	cd /tmp; rm -rf luvit; git clone git@github.com:luvit/luvit.git; cd luvit; make;make install
 
 clean:
 	rm -rf *.luvit *.dSYM
