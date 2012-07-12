@@ -3,6 +3,21 @@ luvit-base64
 
 faster base64 implemantation for luvit
 
+Build
+====
+tested on Linux(ubuntu11) and osx 10.7.
+
+
+    git clone git@github.com:kengonakajima/luvit-base64.git
+    cd luvit-base64
+    make
+    make test
+
+
+
+
+
+    
 
 Benchmark
 ====

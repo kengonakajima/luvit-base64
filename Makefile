@@ -8,10 +8,8 @@ all: $(OUT)
 $(OUT): base64.c
 	gcc $(LIBFLAGS) -g $(CFLAGS) -I. -o $@ $^
 
-test: travis_test
+test: programtest
 
-
-travis_test: install_luvit programtest
 
 programtest: $(OUT)
 	$(LUVIT) test.lua 
