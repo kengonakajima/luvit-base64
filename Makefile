@@ -17,7 +17,7 @@ programtest: $(OUT)
 	$(LUVIT) test.lua 
 
 install_luvit :
-	cd /tmp; rm -rf luvit; curl $(LUVITURL) > luvit.tgz; tar zxf luvit.tgz; cd luvit; make; sudo make install
+	cd /tmp; rm -rf luvit; curl $(LUVITURL) > luvit.tgz; ls -l; tar zxf luvit.tgz; ls -l; cd luvit; make; sudo make install
 
 
 
