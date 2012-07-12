@@ -3,6 +3,8 @@ CFLAGS   := $(shell $(LUVIT) --cflags | sed s/-Werror//)
 LIBFLAGS  := $(shell $(LUVIT) --libs )
 OUT = base64.luvit
 
+LUVITURL = https://raw.github.com/luvit/luvit-releases/master/0.5.0/luvit-0.5.0.tar.gz
+
 all: $(OUT)
 
 $(OUT): base64.c
@@ -15,7 +17,9 @@ programtest: $(OUT)
 	$(LUVIT) test.lua 
 
 install_luvit :
-	cd /tmp; rm -rf luvit; git clone https://github.com/luvit/luvit.git; cd luvit; make; sudo make install
+	cd /tmp; rm -rf luvit; curl $(LUVITURL) > luvit.tgz; tar zxf luvit.tgz; cd luvit; make; sudo make install
+
+
 
 clean:
 	rm -rf *.luvit *.dSYM
