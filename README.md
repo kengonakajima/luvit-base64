@@ -30,7 +30,7 @@ Currently it's not assuming lum or some package managers.
 Benchmark
 ====
 On my macbook pro (core i5, 2.53GHz), it encode/decodes 200~300 times faster than
-pure-lua base64 on luvit(LuaJIT2).
+[pure-lua base64](https://github.com/luvit/luvit/wiki/Snippets) on luvit(LuaJIT2).
 
     bench-enc len:	10000	n:	10000	0.44514688801765	sec	214.23811826545	Mbytes/sec
     bench-dec len:	10000	n:	10000	0.53394065189362	sec	178.61054651375	Mbytes/sec
