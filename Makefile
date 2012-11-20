@@ -1,5 +1,5 @@
 LUVIT = luvit
-CFLAGS   := $(shell $(LUVIT) --cflags | sed s/-Werror//)
+CFLAGS   := -O3 $(shell $(LUVIT) --cflags | sed s/-Werror//)
 LIBFLAGS  := $(shell $(LUVIT) --libs )
 
 all: base64.luvit
