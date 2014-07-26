@@ -1,1 +1,4 @@
 base64.luvit*
+.DS_Store
+*.log
+node_modules
