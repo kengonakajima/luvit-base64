@@ -28,10 +28,12 @@ assert(dec == 'hello')
 
 Tested on Linux and OS X:
 
+```bash
     git clone git@github.com:kengonakajima/luvit-base64.git
     cd luvit-base64
     make
     make test
+```
 
 ## Benchmark
 
