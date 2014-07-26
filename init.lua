@@ -1,5 +1,3 @@
-local codec = require("./base64.luvit")
+local codec = require('./base64.luvit')
 
 return codec
-
-
