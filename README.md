@@ -1,28 +1,19 @@
-#luvit-base64
+# luvit-base64
 
 <a href="http://travis-ci.org/kengonakajima/luvit-base64"><img src="https://secure.travis-ci.org/kengonakajima/luvit-base64.png"></a>
 
 Faster base64 implemantation for [luvit.io](http://luvit.io).
 
-##Install
+## Install
 
 ```bash
 npm install luvit-base64
 ```
 
-If you're not familiar with npm check this out:
+If you're not familiar with [npm](http://npmjs.org) check this out:
 
 https://github.com/voronianski/luvit-npm-example#how-to
 https://github.com/luvitrocks/luvit-utopia#install
-
-### Build
-
-Tested on Linux and OS X:
-
-    git clone git@github.com:kengonakajima/luvit-base64.git
-    cd luvit-base64
-    make
-    make test
 
 ## Example
 
@@ -32,6 +23,15 @@ local enc = base64.encode('hello')
 local dec = base64.decode(enc)
 assert(dec == 'hello')
 ```
+
+## Build
+
+Tested on Linux and OS X:
+
+    git clone git@github.com:kengonakajima/luvit-base64.git
+    cd luvit-base64
+    make
+    make test
 
 ## Benchmark
 
