@@ -1,0 +1,21 @@
+{
+  "name": "luvit-base64",
+  "version": "0.1.0",
+  "description": "Faster base64 implemantation for luvit",
+  "main": "init.lua",
+  "scripts": {
+    "install": "make",
+    "test": "luvit test.lua"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luvitrocks/luvit-base64.git"
+  },
+  "keywords": ["luvit", "base64"],
+  "author": "Kengo Nakajima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luvitrocks/luvit-base64/issues"
+  },
+  "homepage": "https://github.com/luvitrocks/luvit-base64"
+}
